@@ -1,56 +1,79 @@
-# Earthquake-Detection-
+# Earthquake Detection and Alert System using Arduino Uno
 
-Overview
-The system monitors ground motion and activates an audible alarm when significant vibrations are detected. A 16x2 LCD screen displays real-time status updates, informing users whether conditions are safe or if a tremor has been detected.
+A low-cost prototype that detects ground vibrations and triggers real-time alerts using an Arduino Uno and ADXL345 accelerometer. This project is intended for educational purposes and aims to raise awareness about seismic safety.
 
-Objectives
-Design a simple, cost-effective earthquake detection system.
+---
 
-Use an accelerometer (ADXL345) to detect seismic vibrations.
+## 🔍 Overview
 
-Provide immediate alerts using a buzzer and visual status through an LCD.
+This system uses the ADXL345 accelerometer to detect sudden vibrations. Upon detecting a tremor, it activates a piezo buzzer and updates a 16x2 LCD display with real-time status messages.
 
-Serve as an educational tool for students learning about embedded systems.
+---
 
-Components Required
-Arduino Uno
+## 🎯 Objectives
 
-ADXL345 Accelerometer
+- Develop a simple and affordable earthquake detection prototype.
+- Use an accelerometer to sense real-time seismic activity.
+- Trigger immediate audible and visual alerts upon detection.
+- Serve as an educational project for electronics and embedded systems.
 
-16x2 LCD Display (without I2C)
+---
 
-Piezoelectric Buzzer
+## 🛠 Components Required
 
-Resistors (220Ω)
+| Component              | Quantity |
+|------------------------|----------|
+| Arduino Uno            | 1        |
+| ADXL345 Accelerometer  | 1        |
+| 16x2 LCD Display       | 1        |
+| Piezo Buzzer           | 1        |
+| Resistors (220Ω)       | Few      |
+| Breadboard + Jumpers   | As needed|
+| 9V Battery / USB Cable | 1        |
 
-Breadboard and Jumper Wires
+---
 
-9V Battery or USB Cable for Power
+## ⚙️ Working Principle
 
-Working Principle
-The ADXL345 sensor constantly measures acceleration in three axes. These values are read by the Arduino and compared against a predefined threshold. If the threshold is exceeded (indicating a tremor), the buzzer is activated and a warning message is shown on the LCD display. If no significant vibration is detected, the system continues to display a "Safe" status and keeps the buzzer off.
+- The ADXL345 continuously monitors acceleration in X, Y, and Z axes.
+- When the readings exceed a predefined threshold, a tremor is assumed.
+- A piezo buzzer alerts the user, and the LCD displays a warning.
+- If below the threshold, the LCD shows "Safe" and buzzer remains off.
 
-Features
-Real-time vibration monitoring using ADXL345.
+---
 
-Immediate audible (buzzer) and visual (LCD) alerts.
+## ✨ Features
 
-Easy to build with low-cost components.
+- Real-time ground vibration detection.
+- Audible buzzer alert for high vibration levels.
+- LCD display for current seismic status.
+- Powered by USB or 9V battery.
+- Affordable and beginner-friendly hardware.
 
-Power via USB or 9V battery for portability.
+---
 
-Modular for further development or integration with IoT.
+## 🚀 Future Enhancements
 
-Future Enhancements
-Integrate with IoT modules (e.g., ESP8266) for remote monitoring.
+- Add IoT capability (e.g., ESP8266) for remote alerting.
+- Integrate GSM module to send SMS during earthquakes.
+- Log and graph acceleration data over time.
 
-Add GSM module to send SMS alerts during seismic activity.
+---
 
-Visualize vibration data on a dashboard using serial or network communication.
+## 📦 Applications
 
-Applications
-Educational projects in schools and colleges.
+- Educational STEM kits and workshops.
+- Earthquake preparedness demonstrations.
+- DIY home safety alerts.
 
-Fire drills and emergency training setups.
+---
 
-DIY safety solutions for small offices and homes.
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE). Feel free to modify and use it for educational purposes.
+
+---
+
+## 💡 Author
+
+[Yash Raj](https://github.com/dark1612)
